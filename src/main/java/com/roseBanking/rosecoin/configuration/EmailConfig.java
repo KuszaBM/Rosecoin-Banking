@@ -16,7 +16,7 @@ public class EmailConfig {
         mailSender.setPort(587);
 
         mailSender.setUsername("admin@trilowbyte.com");
-        mailSender.setPassword("Nono2134!");
+        mailSender.setPassword("haslo_haslo");
 
         Properties props = mailSender.getJavaMailProperties();
         props.put("mail.transport.protocol", "smtp");
