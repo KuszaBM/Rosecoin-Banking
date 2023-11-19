@@ -1,0 +1,21 @@
+
+<div>
+  <b>user:{{user.username}}</b>
+  <b>coins:{{user.coins}}</b>
+  <b>coinsS:{{coins}}</b>
+  <input type="number" [value]="coinsS()" (keyup)="changeCoins($event)">
+</div>
+
+<div>
+  <tr *ngFor="let UserName of users">
+    <div>
+      {{UserName}}
+      <button>[=]</button>
+      <div class = "t1">
+        <input type="number" [value]="coinsS()" (keyup)="changeCoins($event)">
+        <button (click)="sentTo(UserName, coins)">send</button>
+      </div>
+    </div>
+  </tr>
+</div>
+<button (click)="refreshUsers()">refresh</button>

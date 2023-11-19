@@ -1,0 +1,12 @@
+<div>
+  <p>Register</p>
+  <div>
+    <label>Username</label>
+    <input type="text" #username>
+    <label>Password</label>
+    <input type="text" #password>
+    <label>E-mail</label>
+    <input type="text" #email>
+    <button (click)="register(username.value, password.value, email.value)">Register</button>
+  </div>
+</div>
