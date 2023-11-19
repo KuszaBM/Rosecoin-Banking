@@ -21,6 +21,7 @@ public class UserService {
     private final EmailService emailService;
     @Autowired
     private final EmailVerifyRequestService emailVerifyRequestService;
+
     protected Logger logger = LoggerFactory.getLogger(UserService.class);
 
     public UserService(UserRepo userRepo, UserRepository userRepository, EmailService emailService, EmailVerifyRequestService emailVerifyRequestService) {
