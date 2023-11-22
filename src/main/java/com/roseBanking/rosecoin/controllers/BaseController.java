@@ -54,6 +54,7 @@ public class BaseController {
     @CrossOrigin
     @PostMapping("base/register")
     public String register(@RequestBody User user) {
+        logger.info("d12 p 41");
         if(userService.registerUser(user) == 1) {
             return "new user added";
         }
